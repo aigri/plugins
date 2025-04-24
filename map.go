@@ -2,7 +2,7 @@ package l9plugins
 
 import (
         "github.com/LeakIX/l9format"
-        "github.com/judicieux/soma_web/web"
+        "github.com/aigri/plugins/web"
 )
 
 var webPlugins = []l9format.WebPluginInterface{
