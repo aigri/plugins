@@ -1,4 +1,4 @@
-module github.com/judicieux/soma_web
+module github.com/aigri/plugins
 
 go 1.11
 
