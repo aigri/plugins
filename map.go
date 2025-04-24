@@ -1,0 +1,72 @@
+package l9plugins
+
+import (
+        "github.com/LeakIX/l9format"
+        "github.com/judicieux/soma_web/web"
+)
+
+var webPlugins = []l9format.WebPluginInterface{
+        web.AwsCredentialsHttpPlugin{},
+        web.ConfigJsonHttp{},
+        web.DockerComposeProdHttpPlugin{},
+        web.EnvBackupHttpPlugin{},
+        web.EnvBakHttpPlugin{},
+        web.EnvCiHttpPlugin{},
+        web.EnvClassicHttpPlugin{},
+        web.EnvConfigHttpPlugin{},
+        web.EnvDefaultHttpPlugin{},
+        web.EnvDevelopmentLocalHttpPlugin{},
+        web.EnvDevHttpPlugin{},
+        web.EnvDevLocalHttpPlugin{},
+        web.EnvDistHttpPlugin{},
+        web.EnvLiveHttpPlugin{},
+        web.EnvLocalHttpPlugin{},
+        web.EnvPreprodHttpPlugin{},
+        web.EnvProdHttpPlugin{},
+        web.EnvProdLocalHttpPlugin{},
+        web.EnvProductionHttpPlugin{},
+        web.EnvProductionLocalHttpPlugin{},
+        web.EnvQaHttpPlugin{},
+        web.EnvRcHttpPlugin{},
+        web.EnvSampleHttpPlugin{},
+        web.EnvSandboxHttpPlugin{},
+        web.EnvSaveHttpPlugin{},
+        web.EnvSecretHttpPlugin{},
+        web.EnvStageHttpPlugin{},
+        web.EnvStagingLocalHttpPlugin{},
+        web.SubApiEnvHttpPlugin{},
+        web.BuildEnvAwsHttpPlugin{},
+        web.SubConfigEnvHttpPlugin{},
+        web.ConfigurationEnvAwsHttpPlugin{},
+        web.ProdEnvAwsHttpPlugin{},
+        web.SettingsEnvAwsHttpPlugin{},
+        web.EnvTemplateHttpPlugin{},
+        web.EnvTestHttpPlugin{},
+        web.EnvTestingHttpPlugin{},
+        web.EnvTestingLocalHttpPlugin{},
+        web.EnvUatHttpPlugin{},
+        web.ConfigAppHttpPlugin{},
+        web.ConfigAssetsHttpPlugin{},
+        web.ConfigBackupHttpPlugin{},
+        web.ConfigCmsHttpPlugin{},
+        web.ConfigCoreHttpPlugin{},
+        web.DataConfigHttpPlugin{},
+        web.ConfigFilesHttpPlugin{},
+        web.GitConfigHttpPlugin{},
+        web.ConfigMediaHttpPlugin{},
+        web.ConfigProjectHttpPlugin{},
+        web.PublicConfigHttpPlugin{},
+        web.ServerConfigHttpPlugin{},
+        web.SrcConfigHttpPlugin{},
+        web.ConfigStaticHttpPlugin{},
+        web.AdminConfigProjectHttpPlugin{},
+        web.ConfigSubPathApiHttpPlugin{},
+        web.ConfigConfigProjectHttpPlugin{},
+        web.ConfigSubPathDevHttpPlugin{},
+        web.ConfigSubPathMediaHttpPlugin{},
+        web.ConfigSubPathWwwHttpPlugin{},
+}
+
+func GetWebPlugins() []l9format.WebPluginInterface {
+        return webPlugins
+}
